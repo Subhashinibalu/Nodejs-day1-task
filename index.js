@@ -9,6 +9,10 @@ const PORT =4000;
 
 app.use(express.json())
 
+
+app.get('/',(req,res)=>{
+    res.send("change the end point to see the required results")
+})
 app.listen(PORT,()=>{
     console.log(`app port = ${PORT}`)
 });
